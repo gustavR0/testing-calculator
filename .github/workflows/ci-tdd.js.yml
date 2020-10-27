@@ -25,5 +25,5 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm ci
-    - run: ng test --watch=false --browsers=ChromeHeadless
+    - run: npm run test-headless
     - run: npm run build --if-present
